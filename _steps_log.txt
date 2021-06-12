@@ -1,0 +1,1 @@
+1. In the outer directory type: npx create-react-app reac_redux_initial_demo

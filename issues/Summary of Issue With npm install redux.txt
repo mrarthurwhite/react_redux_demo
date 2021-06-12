@@ -1,0 +1,132 @@
+Summary: 
+
+*****
+1. [15:13:11]  react_redux_initial_demo (master)
+// ♥  npm install redux && npm install react-redux
+
+ERROR: 
+npm ERR! code ENOENT
+npm ERR! syscall rename
+npm ERR! path /mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver
+npm ERR! dest /mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/@babel/plugin-proposal-object-rest-spread/node_modules/semver
+npm ERR! errno -2
+npm ERR! enoent ENOENT: no such file or directory, rename '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/babel-plugin-polyfill-corejs2/node_modules/semver' -> '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/@babel/plugin-proposal-object-rest-spread/node_modules/semver'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/arthur/.npm/_logs/2021-06-11T19_16_07_710Z-debug.log
+
+*****
+2. // ♥  npm start
+internal/modules/cjs/loader.js:1017
+  throw err;
+  ^
+
+Error: Cannot find module 'react-dev-utils/crossSpawn'
+Require stack:
+- /mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/react-scripts/bin/react-scripts.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1014:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:884:27)
+    at Module.require (internal/modules/cjs/loader.js:1074:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/react-scripts/bin/react-scripts.js:18:15)
+    at Module._compile (internal/modules/cjs/loader.js:1185:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1205:10)
+    at Module.load (internal/modules/cjs/loader.js:1034:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:923:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/react-scripts/bin/react-scripts.js'
+  ]
+}
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! reac_redux_initial_demo@0.1.0 start: `react-scripts start`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the reac_redux_initial_demo@0.1.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/arthur/.npm/_logs/2021-06-11T19_36_44_592Z-debug.log
+
+*****
+3. When I just try installing redux
+[15:36:44]  react_redux_initial_demo (master)
+// ♥  npm install redux
+
+npm ERR! code EACCES
+npm ERR! syscall rename
+npm ERR! path /mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/eslint-module-utils
+npm ERR! dest /mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/.eslint-module-utils.DELETE
+npm ERR! errno -13
+npm ERR! Error: EACCES: permission denied, rename '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/eslint-module-utils' -> '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/.eslint-module-utils.DELETE'
+npm ERR!  [OperationalError: EACCES: permission denied, rename '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/eslint-module-utils' -> '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/.eslint-module-utils.DELETE'] {
+npm ERR!   cause: [Error: EACCES: permission denied, rename '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/eslint-module-utils' -> '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/.eslint-module-utils.DELETE'] {
+npm ERR!     errno: -13,
+npm ERR!     code: 'EACCES',
+npm ERR!     syscall: 'rename',
+npm ERR!     path: '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/eslint-module-utils',
+npm ERR!     dest: '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/.eslint-module-utils.DELETE'
+npm ERR!   },
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'rename',
+npm ERR!   path: '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/eslint-module-utils',
+npm ERR!   dest: '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_initial_demo/node_modules/.eslint-module-utils.DELETE',
+npm ERR!   parent: 'react_redux_initial_demo'
+npm ERR! }
+npm ERR!
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR!
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/arthur/.npm/_logs/2021-06-11T19_40_13_509Z-debug.log
+
+********************
+
+So then I create a separate and new react-redux directory
+
+Now when I install react and react-redux everything is fine except it will not start
+
+// ♥  npm start
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path /mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_demo/package.json
+npm ERR! errno -2
+npm ERR! enoent ENOENT: no such file or directory, open '/mnt/c/Users/SOLON/dev/flatiron/labs/react_redux_demo/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/arthur/.npm/_logs/2021-06-11T19_52_48_537Z-debug.log
+
+******************
+
+
+I now go to : https://stackoverflow.com/questions/45531633/npm-warn-enoent-enoent-no-such-file-or-directory-open-c-users-nuwanst-packag
+
+And then remove
+
+rm package-lock.json 
+
+& then do npm init (for a new package.json file) & then npm start
+
+// ♥  npm start
+npm ERR! missing script: start
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/arthur/.npm/_logs/2021-06-11T19_56_55_975Z-debug.log
+
+****
+SOLUTION:
+
+There was another directory called react_redux_demo inside the directory react_redux_demo
+It had all the actual generated code. 
+I moved it up to the right upper directory and it seems to be installing react and react redux fine.
