@@ -9,6 +9,7 @@ function Counter () {
   return (
           <div>
             <p>Count: {count}</p>
+            <button onClick={() => dispatch(countUp)}>Count Up</button>
           </div>
         );
 }
